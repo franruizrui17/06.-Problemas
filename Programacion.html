@@ -1,0 +1,32 @@
+
+front end -> se ejecuta enel cliente
+back end -> se ejecuta en el servidor
+full stack
+
+
+Hola Mundo
+<div>
+<form>
+<input id="r" name="r" placeholder="Resistencia" onkeyup="calcular()"/>
+<input id="v" name="v" placeholder="Voltaje" onkeyup="calcular()"/>
+<button onclick="calcular()">Calcular</button>
+</form>
+</div>
+
+<div id="resultado" style="
+	padding:30px;
+	background-color:pink;
+	">
+</div>
+
+
+<script>
+
+console.log("Vamos a calcular la intensidad que circula por una resistencia");
+function calcular(){
+	r=document.getElementById('r').value;
+	v=document.getElementById('v').value;
+	i=v/r;
+	document.getElementById ('resultado').innerHTML=i+'Amperios';
+}
+</script>
