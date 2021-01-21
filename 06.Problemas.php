@@ -1,4 +1,5 @@
 <center>
+<div style="border: 1px solid blue;">
 	<br>Problema 1 </br>
 	<br>Calcula el perímetro y el área de un hexágono regular de 8 cm de lado </br>
 	<br><img src="Hexagono.PNG"; width="300"; height="250"></br>
@@ -32,11 +33,15 @@
 	
 		echo "El perimetro son $perimetro cm y el area son $A cm cuadrados";
 	?>
+</div>
+
+<div style="border: solid 1px red;">
 	<p><p><p>
 	<br>Problema 2 </br>
 	<br>Se quiere poner césped artificial en un sector de una pista de lanzamiento de jabalina circular. 
 	El ángulo del sector es de 90 grados y el radio 5 metros. ¿Qué superficie será necesario cubrir?</br>
-	<form>
+	<br><img src="PistaJabalina.JPG"; width="300"; height="250"></br>
+	<br><form></br>
 	<input id="a" name="a" onkeyup="calcular()" placeholder="Radio" value="<?=$_GET['a']?>">
 	<input id="b" name="b" onkeyup="calcular()" placeholder="Angulo" value="<?=$_GET['b']?>">
 	<button onclick="calcular()">Calcular</button>
@@ -66,6 +71,9 @@
 	
 		echo "El area del sector son $areasector m cuadrados";
 	?>
+</div>
+
+<div style="border: solid 1px black;">
 	<p><p><p>
 	<br>Problema 3 </br>
 	<p>En el año 2010 la edad de Ana era el triple de la de su hija María. En 2015, sus edades sumaban 54 años. 
@@ -119,4 +127,5 @@
 		Maria nació en el año $Z,
 		$W años tiene Ana cuando nace María";
 	?>
+</div>
 </center>
